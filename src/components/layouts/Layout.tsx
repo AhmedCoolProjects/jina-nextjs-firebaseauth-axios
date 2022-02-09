@@ -3,6 +3,7 @@ import { Container, CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Footer, Header } from "../parts";
 import { THEME } from "../../constants";
+import { useAppSelector } from "../../store";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -10,16 +11,17 @@ type LayoutProps = {
 
 export function Layout(props: LayoutProps) {
   const { children } = props;
+  const appMode = useAppSelector((state) => state.mode.appMode);
   const theme = useMemo(
     () =>
       createTheme({
         palette: {
-          mode: true ? "dark" : "light",
+          mode: appMode,
           primary: THEME.primary,
           secondary: THEME.secondary,
         },
       }),
-    []
+    [appMode]
   );
   return (
     <ThemeProvider theme={theme}>
