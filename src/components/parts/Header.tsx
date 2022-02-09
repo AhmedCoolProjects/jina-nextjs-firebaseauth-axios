@@ -8,9 +8,10 @@ import { changeModeAction, useAppDispatch, useAppSelector } from "../../store";
 
 export function Header() {
   const dispatch = useAppDispatch();
-  const appMode = useAppSelector((state) => state.mode.appMode);
+  const isDark = useAppSelector((state) => state.mode.isDark);
   const toggleTheme = () => {
     dispatch(changeModeAction());
+    localStorage.setItem("isDark", `${!isDark}`);
   };
   return (
     <Paper className="w-full p-3 items-center justify-between flex flex-row">
@@ -23,11 +24,7 @@ export function Header() {
         </div>
       </Link>
       <IconButton onClick={toggleTheme}>
-        {appMode === "dark" ? (
-          <BsSun color="yellow" />
-        ) : (
-          <BsMoonStars color="purple" />
-        )}
+        {isDark ? <BsSun color="yellow" /> : <BsMoonStars color="purple" />}
       </IconButton>
     </Paper>
   );

@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface ModeState {
-  appMode: "dark" | "light";
+  isDark: boolean;
 }
 
 const initialState: ModeState = {
-  appMode: "dark",
+  isDark: true,
 };
 
 const modeSlice = createSlice({
@@ -13,7 +13,7 @@ const modeSlice = createSlice({
   initialState,
   reducers: {
     changeModeAction: (state) => {
-      state.appMode = state.appMode === "dark" ? "light" : "dark";
+      state.isDark = !state.isDark;
     },
   },
 });
