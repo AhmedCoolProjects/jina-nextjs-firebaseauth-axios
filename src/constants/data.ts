@@ -6,4 +6,5 @@ export const ABOUT_ME = {
   linkedin: "https://www.linkedin.com/in/ahmed-bargady/",
   kaggle: "https://www.kaggle.com/ahmedbargady",
   portfolio: "https://ahmedbargady.me",
+  jinaMoon: "https://github.com/JinaMoon",
 };
