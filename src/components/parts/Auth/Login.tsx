@@ -45,7 +45,6 @@ export function Login() {
         placeholder="Password"
         control={control}
         errors={errors}
-        isSecured
       />
       <Button onClick={handleSubmit(onSubmit)}>Login</Button>
     </div>
