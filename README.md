@@ -6,13 +6,13 @@
 
 This template is configured to be a ready to use for next.js projects. Each branch of this repo has some added features to the main branch.
 
-## Features `main` branch
+## Features `redux` branch
 
 - Typescript, ESLINT, TailwindCSS configured
 - Theming
 - Well structured project
 
-## Project structure `main` branch
+## Project structure `redux` branch
 
 📦pages
 ┣ 📜_app.tsx
@@ -51,7 +51,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 ┃ ┣ 📜index.ts
 ┃ ┗ 📜store.ts
 
-## Used technical skills `main` branch
+## Used technical skills `redux` branch
 
 - ReactJS
 - Next.js
