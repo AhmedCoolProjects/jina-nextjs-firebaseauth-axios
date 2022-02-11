@@ -3,7 +3,7 @@ import Head from "next/head";
 import { appAxios } from "../src/axios";
 import { useQuery } from "react-query";
 import { Grid } from "@mui/material";
-import { CoinCard } from "../src/components";
+import { CoinCard, CoinCardSkeleton } from "../src/components";
 import { CoinCardType } from "@app-types/parts";
 
 const Home: NextPage = () => {
@@ -17,7 +17,13 @@ const Home: NextPage = () => {
         <title>Jina Moon Next.JS Template</title>
       </Head>
       {isLoading ? (
-        <div>Loading...</div>
+        <Grid className="pt-6" container spacing={3}>
+          {[1, 2, 3, 4].map((i) => (
+            <Grid item xs={12} key={i} sm={6} md={4}>
+              <CoinCardSkeleton />
+            </Grid>
+          ))}
+        </Grid>
       ) : (
         <div>
           <h1 className="text-center text-2xl font-semibold mt-3">
