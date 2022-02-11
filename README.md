@@ -17,6 +17,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 - Well structured project
 
 ## Project structure `axios` branch
+
 ```
 📦pages
 ┣ 📂about
@@ -86,6 +87,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 ┃ ┣ 📜firebase.ts
 ┃ ┗ 📜index.ts
 ```
+
 ## Used technical skills `axios` branch
 
 - ReactJS
@@ -100,7 +102,6 @@ This template is configured to be a ready to use for next.js projects. Each bran
 - React Query
 - Axios
 
-# Visit my portfolio
-
+# Visit my portfolio,
 
 [Ahmed Bargady](https://ahmedbargady.me)
