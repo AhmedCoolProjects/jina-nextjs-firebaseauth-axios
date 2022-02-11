@@ -63,25 +63,23 @@ const About: NextPage = () => {
       <div>
         <h1 className="text-center text-3xl font-bold my-6">About</h1>
         <Grid container spacing={3}>
-          <Grid
-            className="items-center flex
-             flex-col space-y-3"
-            item
-            xs={12}
-            sm={12}
-            md={6}>
-            <Image
-              className="rounded-full"
-              objectFit="cover"
-              src={IMAGES.me}
-              alt="Ahmed Bargady"
-              width={200}
-              height={200}
-            />
-            <h1 className="text-center text-2xl text-opacity-80 font-semibold">
-              {ABOUT_ME.name}
-            </h1>
-            <h1>{ABOUT_ME.title}</h1>
+          <Grid item xs={12} sm={12} md={6}>
+            <div
+              className="items-center flex
+             flex-col space-y-3">
+              <Image
+                className="rounded-full"
+                objectFit="cover"
+                src={IMAGES.me}
+                alt="Ahmed Bargady"
+                width={200}
+                height={200}
+              />
+              <h1 className="text-center text-2xl text-opacity-80 font-semibold">
+                {ABOUT_ME.name}
+              </h1>
+              <h1>{ABOUT_ME.title}</h1>
+            </div>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
             <SECTION
