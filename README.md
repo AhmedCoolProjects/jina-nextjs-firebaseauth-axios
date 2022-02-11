@@ -14,6 +14,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 
 ## Project structure `redux` branch
 
+```
 📦pages
 ┣ 📜_app.tsx
 ┗ 📜index.tsx
@@ -50,6 +51,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 ┃ ┃ ┗ 📜userSlice.ts
 ┃ ┣ 📜index.ts
 ┃ ┗ 📜store.ts
+```
 
 ## Used technical skills `redux` branch
 
