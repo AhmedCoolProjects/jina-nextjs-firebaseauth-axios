@@ -3,13 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { IMAGES } from "../../constants";
 import { BsSun, BsMoonStars } from "react-icons/bs";
-import {
-  changeModeAction,
-  loginAction,
-  useAppDispatch,
-  useAppSelector,
-} from "../../store";
-import { Auth, LogoutDialog } from "..";
+import { changeModeAction, useAppDispatch, useAppSelector } from "../../store";
+import { Auth } from "..";
 import { Login, Register, ResetPassword } from "./Auth";
 import { useState } from "react";
 
@@ -34,7 +29,7 @@ export function Header() {
   const user = useAppSelector((state) => state.user);
   return (
     <>
-      <Paper className="w-full p-3 items-center justify-between flex flex-row">
+      <Paper className="w-full sticky top-0 z-50 p-3 items-center justify-between flex flex-row">
         <Link href="/" passHref>
           <div className="flex cursor-pointer flex-row items-center space-x-2">
             <div className="w-10 h-10 sm:w-12 sm:h-12 relative">

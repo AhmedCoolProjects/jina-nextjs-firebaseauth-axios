@@ -21,4 +21,14 @@ declare module "@app-types/parts" {
     username?: string;
     confirmPassword?: string;
   };
+  export type CoinCardType = {
+    uuid: string;
+    symbol: string;
+    name: string;
+    color: string;
+    iconUrl: string;
+    rank: number;
+    change: string;
+    price: string;
+  };
 }
