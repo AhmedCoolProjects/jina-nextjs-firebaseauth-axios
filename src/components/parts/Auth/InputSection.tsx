@@ -10,7 +10,7 @@ type InputSectionProps = {
   type: "email" | "password" | "text";
 };
 export default function InputSection(props_local: InputSectionProps) {
-  const { field, placeholder, type, isSecured, control, errors } = props_local;
+  const { field, placeholder, type, control, errors } = props_local;
   return (
     <>
       <Controller
