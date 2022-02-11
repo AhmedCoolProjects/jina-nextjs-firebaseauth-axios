@@ -102,4 +102,5 @@ This template is configured to be a ready to use for next.js projects. Each bran
 
 # Visit my portfolio
 
+
 [Ahmed Bargady](https://ahmedbargady.me)
