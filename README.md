@@ -13,6 +13,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 
 ## Project structure `main` branch
 
+```
 📦pages
 ┣ 📜_app.tsx
 ┗ 📜index.tsx
@@ -38,6 +39,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
 ┃ ┣ 📜images.ts
 ┃ ┣ 📜index.ts
 ┃ ┗ 📜theme.ts
+```
 
 ## Used technical skills `main` branch
 
