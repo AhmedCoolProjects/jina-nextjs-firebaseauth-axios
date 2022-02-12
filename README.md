@@ -1,6 +1,6 @@
 # Jina Moon Next.js Template
 
-[Jina Moon Next.js Template](https://jinamoon-nextjs-template.ahmedbargady.me)
+[Jina Moon Next.js Template](https://nextjs-template-jinamoon.jinamoon.ahmedbargady.me/)
 
 ## About the template
 
