@@ -14,7 +14,9 @@ export function Header() {
     localStorage.setItem("isDark", `${!isDark}`);
   };
   return (
-    <Paper className="w-full p-3 items-center justify-between flex flex-row">
+    <Paper
+      elevation={3}
+      className="w-full top-0 z-50 sticky p-3 items-center justify-between flex flex-row">
       <Link href="/" passHref>
         <div className="flex cursor-pointer flex-row items-center space-x-2">
           <div className="w-10 h-10 sm:w-12 sm:h-12 relative">
