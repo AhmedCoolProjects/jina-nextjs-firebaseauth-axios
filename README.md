@@ -60,7 +60,7 @@ This template is configured to be a ready to use for next.js projects. Each bran
  ┃ ┗ 📜store.ts
 ```
 
-## Used technical skills `redux` branch
+## Used technical skills `graphql` branch
 
 - ReactJS
 - Next.js
